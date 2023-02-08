@@ -1,0 +1,112 @@
+/* for all */
+*{
+  box-sizing: border-box; 
+  /* specifies the behaviour of height and width  */
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}   
+
+/* for all in body */
+
+body{
+    background: var(--color-bg) ;
+}
+
+/* for anchor tags */
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+/* for gradient we used angry tools */
+.gradient__bg
+  
+{
+
+  /* ff 3.6+ */
+  background:-moz-radial-gradient(circle at 4% 6%, rgba(0, 163, 151, 1) 0%, rgba(2, 56, 66, 1) 12%, rgba(0, 0, 0, 1) 34%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 4% 6%, rgba(0, 163, 151, 1) 0%, rgba(2, 56, 66, 1) 12%, rgba(0, 0, 0, 1) 34%);
+
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 4% 6%, rgba(0, 163, 151, 1) 0%, rgba(2, 56, 66, 1) 12%, rgba(0, 0, 0, 1) 34%);
+
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 4% 6%, rgba(0, 163, 151, 1) 0%, rgba(2, 56, 66, 1) 12%, rgba(0, 0, 0, 1) 34%);
+
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 4% 6%, rgba(0, 163, 151, 1) 0%, rgba(2, 56, 66, 1) 12%, rgba(0, 0, 0, 1) 34%);
+
+}
+
+
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color:transparent ;
+}
+
+/* for sections */
+
+.section__padding{
+    padding: 4rem 6rem ;
+}
+
+.section__margin{
+    margin: 4rem 6rem ;
+}
+
+/* for animations we used animista.net */
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  /* applying media quieries now */
+
+  /* for tablets */
+
+  @media screen and(max-width:700px){
+    .section__padding{
+        padding:4rem ;
+    }
+    .section__margin{
+        margin:4rem ;
+    }
+  }
+
+/* for mobiles */
+  @media screen and(max-width:550px){
+    .section__padding{
+        padding:4rem 2rem ;
+    }
+    .section__margin{
+        margin:4rem 2rem ;
+    }
+  }
